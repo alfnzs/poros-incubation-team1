@@ -9,9 +9,10 @@ function ProductCard(props) {
       <div>
         <img src={image} className={style.image} />
       </div>
-
-      <h2 className={style.title}>{title}</h2>
-      <p className={style.price}>${price}</p>
+      <div>
+        <h2 className={style.title}>{title}</h2>
+        <p className={style.price}>${price}</p>
+      </div>
     </Link>
   );
 }
