@@ -9,7 +9,11 @@ const FilterBar = ({ categories, selectedCategory, onFilter }) => {
   return (
     <div className={style.filterBarContainer}>
       <label className={style.label}>Product Categories: </label>
-      <select className={style.selectFilter} value={selectedCategory} onChange={handleCategoryChange}>
+      <select
+        className={style.selectFilter}
+        value={selectedCategory}
+        onChange={handleCategoryChange}
+      >
         <option value="">All Categories</option>
         {categories.map((category) => (
           <option key={category} value={category}>

@@ -25,7 +25,10 @@ function CartPage() {
             <div key={product.id}>
               <div className={style.cartProduct}>
                 <div className={style.cartItem}>
-                  <img src={product.image || "default-image.jpg"} alt={product?.title || "default title"} />
+                  <img
+                    src={product.image || "default-image.jpg"}
+                    alt={product?.title || "default title"}
+                  />
                   <span>{product.title}</span>
                 </div>
                 <p>$ {product.price}</p>

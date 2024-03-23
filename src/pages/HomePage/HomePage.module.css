@@ -1,5 +1,6 @@
 .container {
   padding: 20px 60px 40px 60px;
+  min-height: 420px;
 }
 
 .gridContainer {

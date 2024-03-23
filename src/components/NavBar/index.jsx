@@ -12,12 +12,12 @@ function NavBar() {
       <Link to={"/"}>
         <img className={style.logo} src={logo} alt="logo" />
       </Link>
-      <h1 className={style.title}>
-        FAKE STORE TEAM 1
-      </h1>
+      <h1 className={style.title}>FAKE STORE TEAM 1</h1>
       <Link to={"/cart"} className={style.cart}>
         Cart
-        {cartProducts.length > 0 && <div className={style.cartIndicator}>{cartProducts.length}</div>}
+        {cartProducts.length > 0 && (
+          <div className={style.cartIndicator}>{cartProducts.length}</div>
+        )}
       </Link>
     </nav>
   );

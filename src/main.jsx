@@ -1,14 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import {RouterProvider, createBrowserRouter} from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import ProductContextProvider from "./context/ProductContextProvider";
 import CartPage from "./pages/CartPage";
 
 const router = createBrowserRouter([
-
   {
     path: "/",
     element: <HomePage />,
