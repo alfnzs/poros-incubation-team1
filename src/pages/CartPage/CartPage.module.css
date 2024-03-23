@@ -1,0 +1,19 @@
+.cart img {
+  border: 2px solid #333;
+  border-radius: 10px;
+  width: 50px;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.cartHeading {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+  }
