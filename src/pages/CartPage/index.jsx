@@ -28,7 +28,7 @@ function CartPage() {
                   <img src={product.image || "default-image.jpg"} alt={product?.title || "default title"} />
                   <span>{product.title}</span>
                 </div>
-                <p>{product.price}</p>
+                <p>$ {product.price}</p>
                 <button onClick={() => handleDelete(product.id)}>Remove</button>
               </div>
             </div>
