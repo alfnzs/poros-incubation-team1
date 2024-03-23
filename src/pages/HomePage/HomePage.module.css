@@ -1,0 +1,9 @@
+.container {
+  padding: 20px 60px 40px 60px;
+}
+
+.gridContainer {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}

@@ -1,0 +1,82 @@
+.product-detail {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+
+    justify-content: space-between;
+    min-height: 690px;
+}
+
+
+.product-title {
+    order: -1;
+    font-size: 1.5em;
+    color: #333;
+    font-family: 'Times New Roman', sans-serif;
+    /*margin-bottom: 40px;*/
+    /*margin-left: 0;*/
+    /*margin-top: 0;*/
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transform: translate(30, 0);
+    min-height: 50px;
+}
+
+
+.description-title {
+    font-size: 1.2em;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    /*margin-bottom: -200px;*/
+    text-align: left; /* Tambahkan ini untuk membuat teks berada di sebelah kiri */
+    text-transform: uppercase; /* Tambahkan ini untuk membuat teks menjadi huruf kapital */
+    letter-spacing: 2px; /* Tambahkan ini untuk memberikan jarak antar huruf */
+    transform: translateY(-330px); /* Geser elemen ke bawah */
+}
+
+.product-description {
+    font-size: 1em;
+    color: #666;
+    /*margin-top: -100px;*/
+    /*margin-bottom: -340px;*/
+    /*margin-right: 520px;*/
+    /*margin-left: 560px;*/
+}
+
+.product-price {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 1.5em;
+    color: #ff853e;
+    /*margin-bottom: 10px;*/
+}
+
+.product-stock {
+    font-size: 1em;
+    color: #333;
+    /*margin-bottom: 20px;*/
+}
+
+.product-detail img {
+    border: 2px solid #333;
+    border-radius: 10px;
+    aspect-ratio: 16/10; /* Kecilkan lebar gambar */
+    width: 80%;
+    object-fit: contain;
+
+}
+
+.add-to-cart-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #0056b3;
+}
