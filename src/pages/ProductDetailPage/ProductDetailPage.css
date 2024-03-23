@@ -2,8 +2,10 @@
     padding: 0px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
+
     justify-content: space-between;
+    min-height: 690px;
 }
 
 
@@ -19,7 +21,7 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     transform: translate(30, 0);
-    min-height: 50px; /* Tambahkan ini untuk menetapkan tinggi minimal */
+    min-height: 50px;
 }
 
 
