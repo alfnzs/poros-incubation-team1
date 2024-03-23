@@ -3,9 +3,13 @@ import ProductContext from "./ProductContext";
 
 function ProductContextProvider({ children }) {
     const [cartProducts, setCartProducts] = useState([]);
+      const removeFromCart = (productId) => {
+        const updatedCart = cartProducts.filter(product => product.id !== productId);
+        setCartProducts(updatedCart);
+      };
 
     return (
-        <ProductContext.Provider value={{ cartProducts, setCartProducts }}>
+        <ProductContext.Provider value={{ cartProducts, setCartProducts, removeFromCart }}>
             {children}
         </ProductContext.Provider>
     );
