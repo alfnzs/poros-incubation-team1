@@ -20,11 +20,11 @@ function CartPage() {
         </div>
         <hr />
 
-        <div className={style.cart}>
+        <div>
           {cartProducts.map((product) => (
             <div key={product.id}>
-              <div className={style.cartItem}>
-                <div className={style.cartBox}>
+              <div className={style.cartProduct}>
+                <div className={style.cartItem}>
                   <img src={product.image || "default-image.jpg"} alt={product?.title || "default title"} />
                   <span>{product.title}</span>
                 </div>
