@@ -1,11 +1,12 @@
 .filterBarContainer {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .label {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .selectFilter {
-    padding: 3px;
+  padding: 3px;
+  text-transform: capitalize;
 }

@@ -1,62 +1,55 @@
-/* Footer */
 .footer {
-    background-color: #131918;
-    padding: 30px 60px;
-
+  background-color: #131918;
+  padding: 30px 60px;
 }
 
 .section1 {
-    margin-bottom: 20px;
-    width: 30%;
-
+  margin-bottom: 20px;
+  width: 30%;
+  padding-left: 50px;
 }
 
 .contact p {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 .section2 {
-    display: flex;
-    width: 70%;
-    justify-content: end;
-    padding-right: 120px;
-    gap: 20px;
-}
-
-.section2a {
-
+  display: flex;
+  width: 70%;
+  justify-content: end;
+  padding-right: 80px;
+  gap: 20px;
 }
 
 .footer h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    color:#fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #fff;
 }
 
 .footer p {
-    margin-bottom: 10px;
-    color:#fff;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .footer ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer ul li {
-    margin-bottom: 5px;
-
+  margin-bottom: 5px;
 }
-.footer ul li a{
-    color:#fff;
-    text-decoration: none;
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .copyright {
-    text-align: center;
+  text-align: center;
 }
