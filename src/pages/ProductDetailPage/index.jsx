@@ -21,7 +21,11 @@ function ProductDetailPage() {
     return (
         <DefaultLayout>
             <div className="product-detail">
+                <div  className="product-image">
                 <img src={product?.image || 'default-image.jpg'} alt={product?.title || 'default title'}/>
+
+                </div>
+                <div className="deskripsi">
                 <h1 className="product-title">{(product?.title)}</h1>
                 <h3 className="description-title">Description : </h3>
                 <p className="product-description">{product?.description}</p>
@@ -30,6 +34,8 @@ function ProductDetailPage() {
                 <button className="add-to-cart-button" onClick={() => setCartProducts((prev) => [...prev, product])}>
                     Add to Cart
                 </button>
+
+                </div>
             </div>
         </DefaultLayout>
     );
