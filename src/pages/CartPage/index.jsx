@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import ProductContext from "../../context/ProductContext";
 import DefaultLayout from "../../layout/DefaultLayout";
-import style from "./CartPage.module.css"
+import style from "./CartPage.module.css";
 
 function CartPage() {
   const { cartProducts, removeFromCart } = useContext(ProductContext);
@@ -20,18 +20,20 @@ function CartPage() {
         </div>
         <hr />
 
-      <div className={style.cart}>
-        {cartProducts.map((product) => (
-          <div key={product.id}>
-            <div className={style.cartHeading}>
-            <img src={product.image || 'default-image.jpg'} alt={product?.title || 'default title'}/>
-            <span>{product.title}</span>
-            <span>{product.price}</span>
-            <button onClick={() => handleDelete(product.id)}>Remove</button>
+        <div>
+          {cartProducts.map((product) => (
+            <div key={product.id}>
+              <div className={style.cartProduct}>
+                <div className={style.cartItem}>
+                  <img src={product.image || "default-image.jpg"} alt={product?.title || "default title"} />
+                  <span>{product.title}</span>
+                </div>
+                <p>{product.price}</p>
+                <button onClick={() => handleDelete(product.id)}>Remove</button>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </div>
     </DefaultLayout>
   );
